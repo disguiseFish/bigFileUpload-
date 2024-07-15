@@ -4,7 +4,7 @@
     <div class="el-upload__text">Drop file here or <em>click to upload</em></div>
 
     <template #tip>
-      <div class="el-upload__tip">大文件上传：limit 3 file</div>
+      <div class="el-upload__tip">大文件上传： limit 3 file</div>
     </template>
   </el-upload>
 
