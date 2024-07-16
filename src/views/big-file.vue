@@ -4,7 +4,7 @@
     <div class="el-upload__text">Drop file here or <em>click to upload</em></div>
 
     <template #tip>
-      <div class="el-upload__tip">大文件上传： limit 3 file</div>
+      <div class="el-upload__tip">大文件上传：limit 3 file</div>
     </template>
   </el-upload>
 
@@ -23,6 +23,7 @@ const fileList = ref<UploadFiles>([])
 const limitNum = ref(3)
 
 onMounted(async () => {
+  // 初始化数据库（创建出错处理 成功创建处理 版本未更新处理）
   await indexedDB.initDB()
 })
 
